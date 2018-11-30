@@ -32,7 +32,7 @@ public class HelperBase {
             System.out.println("Current locator " + locator);
             return true;
         } catch (NoSuchElementException e) {
-            System.out.println("exeption" + locator);
+            System.out.println("exeption a" + locator);
             return false;
         }
     }
