@@ -11,3 +11,6 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 *.log
+.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_8_15.xml
+.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_8_15.xml
+.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_8_15.xml
