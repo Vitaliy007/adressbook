@@ -6,4 +6,31 @@ repositories {
 
 dependencies {
     compile 'org.testng:testng:7.0.0-beta1'
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.14.0'
+    testCompile group: 'org.hamcrest', name: 'java-hamcrest', version: '2.0.0.0'
+}
+
+test{
+    useTestNG {
+        suites 'src/test/resources/tesng-groups.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+task testContacts(type: Test){
+    useTestNG {
+        suites 'src/test/resources/tesng.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'browser', "${browser}"
+    }
+
 }
